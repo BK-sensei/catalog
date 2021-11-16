@@ -3,13 +3,10 @@ import { BrowserRouter, Switch, Route } from "react-router-dom"
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-// import Catalog from './catalog.json'
-
 import Home from './pages/Home';
-// import Movies from './pages/Movies';
+import Movie from './pages/Movie'
 import NotFound from './pages/NotFound';
 
-import Movie from './components/Movie'
 
 class App extends Component {
   render() {
@@ -19,7 +16,7 @@ class App extends Component {
         <Switch>
 
             <Route exact path="/" component={Home}/>
-            <Route path='/movie/:id' component={Movie}/>
+            <Route path='/movies/:id' component={Movie}/>
             <Route path="*" component={NotFound}/>
 
         </Switch>

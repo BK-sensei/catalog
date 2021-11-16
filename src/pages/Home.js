@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
 import catalog from '../catalog.json'
-// import Movie from '../components/Movie';
 
 class Home extends Component {
 
@@ -15,7 +14,7 @@ class Home extends Component {
                 {catalog.map(movie =>(
                     <Link
                         key= {`${movie.title}-${movie.id}`}
-                        to={`/movie/${movie.id}`}
+                        to={`/movies/${movie.id}`}
                     >
                         <ul>
                             <li>
